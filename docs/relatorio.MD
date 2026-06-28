@@ -12,7 +12,7 @@ O objetivo deste projeto foi desenvolver e implantar um Chatbot Inteligente base
 
 A solução consiste em uma aplicação web interativa desenvolvida em Streamlit, que atua como frontend do usuário. O "cérebro" do assistente é alimentado pelo modelo Llama 3.1 8B da Meta (disponibilizado via API de inferência da NVIDIA), parametrizado com instruções estritas (System Prompt) de segurança médica, conversão de métricas esportivas (pace em min/km, velocidade em km/h e zonas de esforço) e formatação estruturada de planilhas de treino.
 
-### ☁️ Infraestrutura
+## ☁️ Infraestrutura
 
 Para a sustentação da aplicação, exploramos caminhos que simulam o ciclo de vida real de um ambiente de desenvolvimento e produção:
 
@@ -26,7 +26,7 @@ Para a sustentação da aplicação, exploramos caminhos que simulam o ciclo de 
 
 Nota de Arquitetura: Durante o projeto, não foi possível estabelecer conexão SSH com a VM da Ordacle. Portando, a implantação foi finalizada na Streamlit Community Cloud, uma plataforma serveless (PaaS) otimizada que permitiu alta disponibilidade e integração contínua (CI/CD) direta do repositório GitHub sem o overhead de gerenciar sistemas operacionais.
 
-### 🧠 Modelo Escolhido
+## 🧠 Modelo Escolhido
 
 A escolha do LLM foi estratégica para garantir precisão técnica, respostas altamente contextualizadas e velocidade:
 
@@ -43,7 +43,7 @@ Alinhamento Estrito a Instruções (System Prompt): Crucial para garantir que as
 
 Habilidade de Formatação: Excelente capacidade de estruturar tabelas de treino em Markdown legíveis para o atleta.
 
-### 🛠️ Desenvolvimento
+## 🛠️ Desenvolvimento
 
 #### Arquitetura da Aplicação
 
@@ -75,7 +75,7 @@ Segurança foi prioridade absoluta. A chave de API (NVIDIA_API_KEY) nunca foi ex
 
 - Ambiente de Produção (Cloud): Injetada de forma segura nas configurações de ambiente secretas da plataforma de hospedagem.
 
-### 🚀 Implantação
+## 🚀 Implantação
 
 Processo de Publicação na Oracle Cloud
 
@@ -101,7 +101,7 @@ Porém, não foi possível estabalecer a conexão SSH e gerou um dasafio adicion
 4. Apontar para o repositório no GitHub
 5. Acessar a URL da aplicação [Chatbot Endurance](https://chatbot-endurance-g4cwnhuyu8heilqu5zpjqm.streamlit.app/)
 
-### 💬 Discussão
+## 💬 Discussão
 
 Possíveis Melhorias Futuras
 
