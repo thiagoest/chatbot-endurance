@@ -53,4 +53,4 @@ O chatbot abrirá automaticamente no seu navegador em ```http://localhost:8501``
 
 - ```.streamlit/```: Pasta de configurações e segredos (ignorada pelo Git).
 
-Desenvolvido como parte do programa de especialização em GenAI.
+Desenvolvido como parte do programa de especialização em GenAI da UFPR.
