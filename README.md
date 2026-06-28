@@ -10,8 +10,7 @@ Para executar este projeto na sua máquina, siga os passos abaixo.
 ## 1. Clonar o repositório
 Abra seu terminal e clone o repositório:
  ```bash 
- git clone https://github.com/thiagoest/espec-genai.git
-cd espec-genai
+ git clone https://github.com/thiagoest/chatbot-endurance.git
 ```
 ## 2. Configurar o Ambiente Virtual (Conda)
 Crie um ambiente isolado para o projeto:
@@ -24,17 +23,17 @@ conda activate chatbot-env
 ```
 ## 3. Instalar dependências
 ``` bash
-pip instal -r prod/prd01_chatbot/requirements.txt
+pip instal -r requirements.txt
 ```
 
 ## 4. Configurar as Secrets
 Por segurança, sua chave de API não deve ficar exposta no código.
-1. Na pasta ```prod/prd01_chatbot/```, crie uma pasta chamada ```.streamlit```.
+1. Na raiz do repositório, crie uma pasta chamada ```.streamlit```.
 2. Dentro dela, crie um arquivo chamado ```secrets.toml```.
 3. Adicione sua chave no arquivo:
 
 ``` bash
-# prod/prd01_chatbot/.streamlit/secrets.toml
+# .streamlit/secrets.toml
 NVIDIA_API_KEY = "sua-chave-aqui"
 ```
 
@@ -42,7 +41,6 @@ NVIDIA_API_KEY = "sua-chave-aqui"
 Navegue até o diretório do app e inicie o Streamlit
 
 ``` bash
-cd prod/prd01_chatbot/
 streamlit run app.py
 ```
 
